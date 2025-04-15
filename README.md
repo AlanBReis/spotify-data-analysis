@@ -1,41 +1,36 @@
-#  Spotify Data Analysis
+# Spotify Playlist Analyzer 🎧
 
-Projeto de Engenharia de Dados com foco em análise de tendências musicais e sistema de recomendação personalizada usando a API do Spotify.
+Projeto de visualização e exploração de dados musicais com base em suas playlists personalizadas usando a API do Spotify, Python e Power BI.
 
 ##  Objetivo
 
-Extrair, transformar e analisar dados do Spotify para entender tendências musicais globais e sugerir músicas com base no gosto pessoal do usuário.
+Extrair dados da API do Spotify a partir de uma playlist pessoal e apresentar visualmente informações como popularidade das músicas, duração média, distribuição por artistas.
 
-##  Tecnologias
+##  Tecnologias Utilizadas
 
 - Python + Spotipy
 - Pandas
-- PostgreSQL (Docker)
 - Power BI
-- Docker Compose
 
-##  Estrutura do Projeto
+##  Funcionalidades
 
-- Coleta de dados via Spotify Web API
-- Armazenamento em banco PostgreSQL
-- Visualizações com Power BI
-- Sistema de recomendação com base nos artistas favoritos
+- Coleta de dados via API do Spotify
+- Exportação dos dados transformados para CSV
+- Visualização interativa com Power BI
+- Filtros por popularidade e duração
+- Análise gráfica de músicas, artistas e álbuns
 
 ##  Exemplo de Dashboard
 
-*(inserir print do Power BI aqui depois)*
+*(inserir print do Power BI aqui)*
 
-##  Como rodar localmente
-
+##  Como executar localmente
 
 ### Clone o repositório
 ```bash
 git clone https://github.com/AlanBReis/spotify-data-analysis.git
 ```
-### Suba o banco de dados
-```bash
-docker-compose up -d
-```
+
 ### Configure o arquivo .env com suas credenciais da API do Spotify
 
 Para que o script de coleta de dados possa interagir com a API do Spotify, você precisará criar um aplicativo no [Painel de Desenvolvedores Spotify](https://developer.spotify.com/dashboard). Após criar o aplicativo, você receberá um **Client ID** e um **Client Secret**.
@@ -43,9 +38,9 @@ Para que o script de coleta de dados possa interagir com a API do Spotify, você
 Siga estas etapas para configurar o arquivo `.env` localmente:
 
 1.  **Copie o arquivo de exemplo:** Execute o seguinte comando no terminal, na raiz do seu projeto:
-    ```bash
+```bash
     cp .env.example .env
-    ```
+```
     Este comando criará uma cópia do arquivo `.env.example` chamada `.env`. O arquivo `.env.example` já deve conter as variáveis esperadas (por exemplo, `SPOTIPY_CLIENT_ID=` e `SPOTIPY_CLIENT_SECRET=`).
 
 2.  **Edite o arquivo `.env`:** Abra o arquivo `.env` com um editor de texto. Você precisará preencher os valores corretos para as seguintes variáveis, **substituindo o texto `SEU_CLIENT_ID` e `SEU_CLIENT_SECRET` pelos seus valores reais** obtidos no Painel de Desenvolvedores Spotify:
@@ -68,10 +63,25 @@ Siga estas etapas para configurar o arquivo `.env` localmente:
 ```bash
 pip install -r requirements.txt
 ```
-### Execute o ETL
+
+### Modifique para a ID do seu spotify
+*Modifique no arquivo fetch_trends.py sua ID*
+
+```bash
+playlist_id = "5gJ6V0oZhIR52XOf6ruGw7"
+```
+
+
+### Execute a coleta de dados
+
 ```bash
 python src/etl/fetch_trends.py
 ```
+
+Esse script gera um arquivo CSV com os dados da sua playlist.
+
+Visualize os dados no Power BI
+Abra o arquivo powerbi-spotify.pbix no Power BI Desktop para explorar o dashboard interativo.
 
 
 ![thumbnail](images/thumbnail-spotify-data-analysis.png)
