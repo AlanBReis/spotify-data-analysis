@@ -1,0 +1,9 @@
+pandas
+numpy
+matplotlib
+seaborn
+jupyterlab
+openpyxl
+pyodbc
+xlrd
+python-dateutil
