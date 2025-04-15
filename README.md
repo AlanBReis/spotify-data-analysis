@@ -51,10 +51,10 @@ Este comando criará uma cópia do arquivo `.env.example` chamada `.env`. O arqu
     SPOTIPY_REDIRECT_URI=http://localhost:8888/callback  # Ou a URI de redirecionamento que você configurou no painel
     ```
 
-    **Importante:**
+**Importante:**
 
-    * **Não compartilhe seu arquivo `.env` ou suas credenciais diretamente com outras pessoas.**
-    * Certifique-se de que o arquivo `.env` esteja listado no seu arquivo `.gitignore` para evitar que suas informações confidenciais sejam enviadas para o repositório Git.
+* **Não compartilhe seu arquivo `.env` ou suas credenciais diretamente com outras pessoas.**
+* Certifique-se de que o arquivo `.env` esteja listado no seu arquivo `.gitignore` para evitar que suas informações confidenciais sejam enviadas para o repositório Git.
 
 3.  **URI de Redirecionamento:** A `SPOTIPY_REDIRECT_URI` é a URI para a qual o Spotify redirecionará o usuário após a autenticação. Para desenvolvimento local, `http://localhost:8888/callback`
 
@@ -86,7 +86,6 @@ Abra o arquivo powerbi-spotify.pbix no Power BI Desktop para explorar o dashboar
 
 ![thumbnail](images/thumbnail-spotify-data-analysis.png)
 
-_“Tendências musicais e recomendações personalizadas em um só projeto”_
 
 
 Desenvolvido por  [Alan Reis](https://www.linkedin.com/in/alanbrreis/) 
