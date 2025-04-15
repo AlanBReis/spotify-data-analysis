@@ -22,7 +22,7 @@ Extrair dados da API do Spotify a partir de uma playlist pessoal e apresentar vi
 
 ##  Exemplo de Dashboard
 
-*(inserir print do Power BI aqui)*
+![thumbnail](images/image.png)
 
 ##  Como executar localmente
 
