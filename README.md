@@ -41,7 +41,7 @@ Siga estas etapas para configurar o arquivo `.env` localmente:
 ```bash
     cp .env.example .env
 ```
-    Este comando criará uma cópia do arquivo `.env.example` chamada `.env`. O arquivo `.env.example` já deve conter as variáveis esperadas (por exemplo, `SPOTIPY_CLIENT_ID=` e `SPOTIPY_CLIENT_SECRET=`).
+Este comando criará uma cópia do arquivo `.env.example` chamada `.env`. O arquivo `.env.example` já deve conter as variáveis esperadas (por exemplo, `SPOTIPY_CLIENT_ID=` e `SPOTIPY_CLIENT_SECRET=`).
 
 2.  **Edite o arquivo `.env`:** Abra o arquivo `.env` com um editor de texto. Você precisará preencher os valores corretos para as seguintes variáveis, **substituindo o texto `SEU_CLIENT_ID` e `SEU_CLIENT_SECRET` pelos seus valores reais** obtidos no Painel de Desenvolvedores Spotify:
 
