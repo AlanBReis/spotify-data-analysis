@@ -79,7 +79,7 @@ python src/etl/fetch_trends.py
 _“Tendências musicais e recomendações personalizadas em um só projeto”_
 
 
-Desenvolvido por - [Alan Reis](https://www.linkedin.com/in/alanbrreis/) 
+Desenvolvido por  [Alan Reis](https://www.linkedin.com/in/alanbrreis/) 
 
 ## Licença
 
